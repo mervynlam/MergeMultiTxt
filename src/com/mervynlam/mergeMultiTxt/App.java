@@ -67,6 +67,7 @@ public class App {
 					BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsoluteFile()), encoding));
 					String str = null;
 					while((str = br.readLine()) != null){
+						str = str.replaceAll("@无限好文，尽在晋江文学城", "");
 						bw.write(str);
 						bw.newLine();
 					}
