@@ -65,7 +65,9 @@ public class App {
 				//遍历文件夹下的txt
 				for(File file : files) {
 					try {
-						bw.write("第"+(++chapterNum)+"章 ");
+						if (!file.getName().contains("第000章")) {
+							bw.write("第"+(++chapterNum)+"章 ");
+						}
 						//输入流
 						BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsoluteFile()), encoding));
 						String str = null;
