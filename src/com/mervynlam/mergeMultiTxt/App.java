@@ -66,7 +66,7 @@ public class App {
 				for(File file : files) {
 					try {
 						if (!file.getName().contains("第000章")) {
-							bw.write("第"+(++chapterNum)+"章 ");
+							bw.write("#第"+(++chapterNum)+"章 ");
 						}
 						//输入流
 						BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsoluteFile()), encoding));
