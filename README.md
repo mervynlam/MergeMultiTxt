@@ -3,20 +3,22 @@
 1. 同一本小说各txt存放在同一文件夹下，合成的txt文件将以文件夹名为文件名。
 2. bat和jar文件位置与小说文件夹同等级。
 即
-|--	novelADir
-		|--novelA_1.txt
-		|--novelA_2.txt
-		|--novelA_3.txt
-|--	novelBDir
-		|--novelB_1.txt
-		|--novelB_2.txt
-		|--novelB_3.txt
+```
+|--novelADir
+	|--novelA_1.txt
+	|--novelA_2.txt
+	|--novelA_3.txt
+|--novelBDir
+	|--novelB_1.txt
+	|--novelB_2.txt
+	|--novelB_3.txt
 |--novelCDir
-		|--novelC_1.txt
-		|--novelC_2.txt
-		|--novelC_3.txt
+	|--novelC_1.txt
+	|--novelC_2.txt
+	|--novelC_3.txt
 |--merge.bat
 |--MergeMultiTxt.jar
+```
 3. 同时合成所有文件夹下的txt。合成后可检查然后删除文件夹。
 ## 使用`calibre`转mobi
 1. 外观界面
